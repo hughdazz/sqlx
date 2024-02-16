@@ -42,7 +42,7 @@ impl<S: Socket> MySqlStream<S> {
     ) -> Self {
         let mut capabilities = Capabilities::PROTOCOL_41
             | Capabilities::IGNORE_SPACE
-            | Capabilities::DEPRECATE_EOF
+            // | Capabilities::DEPRECATE_EOF
             | Capabilities::FOUND_ROWS
             | Capabilities::TRANSACTIONS
             | Capabilities::SECURE_CONNECTION
